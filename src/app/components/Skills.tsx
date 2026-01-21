@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
       category: 'Frontend Development',
       icon: Code2,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'Responsive Design']
+      skills: ['React.js', 'HTML', 'CSS', 'JavaScript', 'Responsive Design']
     },
     {
       category: 'UI/UX & Design Tools',
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
       category: 'Data & Visualization',
       icon: Database,
       color: 'from-indigo-500 to-purple-500',
-      skills: ['Excel', 'Power BI', 'Data Cleaning', 'Data Analysis']
+      skills: ['Excel', 'Power BI', 'Data Cleaning', 'Data Analysis', 'R']
     },
     {
       category: 'Tools & Platforms',

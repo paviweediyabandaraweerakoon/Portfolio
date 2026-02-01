@@ -56,7 +56,6 @@ const Projects: React.FC = () => {
       type: 'Web UI',
       description: 'Built a responsive company website using React, Vite, and TypeScript, emphasizing reusable components, modern UI design, and fast performance with Tailwind CSS.',
       tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
-      icon: Building,
       color: 'from-slate-900 via-indigo-900 to-purple-900',
       image: 'https://media.licdn.com/dms/image/v2/D5616AQGthYCZ3iOfWQ/profile-displaybackgroundimage-shrink_350_1400/B56ZuHv5aAHAAY-/0/1767509050249?e=1771459200&v=beta&t=75z0NmU39RJfTLIydi37KMQCvSLYpTLxY8fqIGSuGQg',
       links: [

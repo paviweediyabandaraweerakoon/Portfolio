@@ -15,15 +15,21 @@ const Projects: React.FC = () => {
       links: []
     },
     {
-      title: 'BrightLearn Educational Mobile App',
-      type: 'React Native',
-      description: 'Designed and developed a multi-interface educational mobile application with a focus on clean UI design and smooth navigation. Implemented reusable frontend components aligned with modern mobile UX principles.',
-      tech: ['React Native', 'Mobile UI/UX', 'Component Design'],
-      icon: Brain,
-      color: 'from-cyan-500 to-teal-500',
-      image: 'https://images.unsplash.com/photo-1758270704522-f091f8064a81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBsZWFybmluZyUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3Njg3NTk2MTR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      links: []
-    },
+  title: 'MPS AI Solution – Business Website',
+  type: 'Web Application',
+  description: 'Designed and developed a responsive AI-focused business website showcasing services, solutions, and company vision. Emphasized modern UI/UX, performance optimization, and clean component-based architecture.',
+  tech: ['Next.js', 'React', 'Tailwind CSS', 'Vercel', 'UI/UX Design'],
+  icon: Globe,
+  color: 'from-purple-500 to-indigo-500',
+  image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  links: [
+    {
+      label: 'Live Website',
+      url: 'https://mps-ai-solution.vercel.app/'
+    }
+  ]
+}
+
     {
       title: 'Shenu Gift Hub',
       type: 'Frontend Web Project',

@@ -50,6 +50,21 @@ const Projects: React.FC = () => {
         { type: 'github', url: 'https://github.com/paviweediyabandaraweerakoon/BlueOceanAquarium' }
       ]
     },
+
+     {
+      title: 'MPS AI SOLUTION',
+      type: 'Web UI',
+      description: 'Built a responsive company website using React, Vite, and TypeScript, emphasizing reusable components, modern UI design, and fast performance with Tailwind CSS.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+      icon: Droplet,
+      color: 'from-slate-900 via-indigo-900 to-purple-900',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQE5EptkecrLmA/profile-displayphoto-crop_800_800/B56ZuHrPIFKgAI-/0/1767507818104?e=1771459200&v=beta&t=Ei8G3Y0Pdy2wq1anXpnrjpP_RQPh_crDr4uE2xmgZUo',
+      links: [
+        { type: 'live', url: 'https://mps-ai-solution.vercel.app/' },
+        { type: 'github', url: 'https://github.com/paviweediyabandaraweerakoon/MPS-AI-SOLUTION' }
+      ]
+    },
+    
     {
       title: 'Sri Lanka Tourism',
       type: 'Frontend Web Project',

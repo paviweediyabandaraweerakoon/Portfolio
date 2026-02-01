@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
       tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
       icon: Droplet,
       color: 'from-slate-900 via-indigo-900 to-purple-900',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQE5EptkecrLmA/profile-displayphoto-crop_800_800/B56ZuHrPIFKgAI-/0/1767507818104?e=1771459200&v=beta&t=Ei8G3Y0Pdy2wq1anXpnrjpP_RQPh_crDr4uE2xmgZUo',
+      image: 'https://media.licdn.com/dms/image/v2/D5616AQGthYCZ3iOfWQ/profile-displaybackgroundimage-shrink_350_1400/B56ZuHv5aAHAAY-/0/1767509050249?e=1771459200&v=beta&t=75z0NmU39RJfTLIydi37KMQCvSLYpTLxY8fqIGSuGQg',
       links: [
         { type: 'live', url: 'https://mps-ai-solution.vercel.app/' },
         { type: 'github', url: 'https://github.com/paviweediyabandaraweerakoon/MPS-AI-SOLUTION' }

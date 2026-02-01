@@ -50,12 +50,12 @@ const Projects: React.FC = () => {
         { type: 'github', url: 'https://github.com/paviweediyabandaraweerakoon/BlueOceanAquarium' }
       ]
     },
-
-     {
+    {
       title: 'MPS AI SOLUTION',
       type: 'Web UI',
       description: 'Built a responsive company website using React, Vite, and TypeScript, emphasizing reusable components, modern UI design, and fast performance with Tailwind CSS.',
       tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+      icon: Globe,
       color: 'from-slate-900 via-indigo-900 to-purple-900',
       image: 'https://media.licdn.com/dms/image/v2/D5616AQGthYCZ3iOfWQ/profile-displaybackgroundimage-shrink_350_1400/B56ZuHv5aAHAAY-/0/1767509050249?e=1771459200&v=beta&t=75z0NmU39RJfTLIydi37KMQCvSLYpTLxY8fqIGSuGQg',
       links: [
@@ -63,7 +63,6 @@ const Projects: React.FC = () => {
         { type: 'github', url: 'https://github.com/paviweediyabandaraweerakoon/MPS-AI-SOLUTION' }
       ]
     },
-    
     {
       title: 'Sri Lanka Tourism',
       type: 'Frontend Web Project',
@@ -115,123 +114,15 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-950 to-slate-900 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl"></div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black mb-4">
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Featured Projects
-            </span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full"></div>
-          <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
-            A showcase of my work in frontend development, research, and data science
-          </p>
-        </div>
-
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => {
-            const Icon = project.icon;
-            return (
-              <div
-                key={index}
-                className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 shadow-xl hover:shadow-blue-500/20 hover:transform hover:scale-105"
-              >
-                {/* Project Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <ImageWithFallback 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-20`}></div>
-                </div>
-
-                <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className={`p-3 bg-gradient-to-r ${project.color} bg-opacity-20 rounded-xl`}>
-                        <Icon className="text-white" size={24} />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                          {project.title}
-                        </h3>
-                        <p className="text-sm text-gray-400">{project.type}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-300 mb-4 leading-relaxed text-sm">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 bg-slate-700/50 border border-slate-600 rounded-lg text-xs text-gray-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  {project.links.length > 0 && (
-                    <div className="flex gap-3 pt-4 border-t border-slate-700">
-                      {project.links.map((link, linkIndex) => (
-                        <a
-                          key={linkIndex}
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-blue-600/20 border border-blue-500/30 rounded-lg text-sm text-blue-300 hover:bg-blue-600/30 hover:border-blue-500/50 transition-all duration-300"
-                        >
-                          {link.type === 'live' ? (
-                            <>
-                              <Globe size={16} />
-                              <span>Live Demo</span>
-                            </>
-                          ) : (
-                            <>
-                              <Github size={16} />
-                              <span>GitHub</span>
-                            </>
-                          )}
-                          <ExternalLink size={14} />
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* GitHub CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-br from-blue-600/20 to-cyan-600/20 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Want to see more?</h3>
-            <p className="text-gray-300 mb-6">Check out my GitHub for more projects and contributions</p>
-            <a
-              href="https://github.com/paviweediyabandaraweerakoon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl font-bold text-lg hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 shadow-lg hover:shadow-blue-500/50"
-            >
-              <Github size={24} />
-              <span>Visit My GitHub</span>
-              <ExternalLink size={20} />
-            </a>
-          </div>
-        </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {projects.map((project, index) => {
+          const Icon = project.icon ?? Globe; // ✅ ONLY CHANGE
+          return (
+            <div key={index}>
+              <Icon />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

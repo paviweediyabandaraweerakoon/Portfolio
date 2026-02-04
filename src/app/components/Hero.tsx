@@ -182,14 +182,6 @@ const Hero: React.FC<HeroProps> = ({ setActiveSection }) => {
           </button>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-8 h-12 border-2 border-blue-400 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-          </div>
-        </div>
-      </div>
-
       <style>{`
         @keyframes fadeInUp {
           from {
